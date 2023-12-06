@@ -3,7 +3,7 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import Navbar from "./_components/Navbar";
 
-const font = Poppins({ subsets: ["latin"], weight: ["400", "700"] });
+const font = Poppins({ subsets: ["latin"], weight: ["400", "600", "800"] });
 
 export const metadata: Metadata = {
   title: "Alt Educational Consult Limited",
@@ -43,7 +43,7 @@ export default function RootLayout({
         className={`${font.className} h-screen w-screen antialiased flex flex-col items-center`}
       >
         <Navbar />
-        <main>{children}</main>
+        <main className="w-full pt-[76px]">{children}</main>
       </body>
     </html>
   );

@@ -1,3 +1,5 @@
+import AboutUsSection from "./_components/AboutUsSection";
+
 export default function Home() {
-  return <div>Alt Educational Consult Limited</div>;
+  return <AboutUsSection />;
 }
