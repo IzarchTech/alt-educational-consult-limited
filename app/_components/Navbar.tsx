@@ -5,11 +5,12 @@ import Link from "next/link";
 type NavMenu = {
   title: string;
   path: string;
+  spa?: boolean;
 };
 
 const NAV_MENU: NavMenu[] = [
-  { title: "Who We Are", path: "/" },
-  { title: "Our Services", path: "/" },
+  { title: "Who We Are", path: "#who_we_are", spa: true },
+  { title: "Our Services", path: "#our_services", spa: true },
   { title: "Book a Consultation", path: "/" },
   { title: "Contact Us Now", path: "/" },
 ];

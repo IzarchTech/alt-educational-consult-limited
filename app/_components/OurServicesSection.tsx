@@ -19,7 +19,7 @@ const SERVICES = [
 
 function OurServicesSection() {
   return (
-    <div className="flex flex-col items-center w-full gap-10">
+    <div className="flex flex-col items-center w-full gap-10" id="our_services">
       <div className="relative w-full">
         <img
           src="/assets/our_services.jpg"

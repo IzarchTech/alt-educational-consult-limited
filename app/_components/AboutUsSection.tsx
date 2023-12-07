@@ -2,7 +2,7 @@
 
 function AboutUsSection() {
   return (
-    <div className="flex flex-col items-center w-full gap-10">
+    <div className="flex flex-col items-center w-full gap-10" id="who_we_are">
       <div className="relative w-full">
         <img
           src="/assets/about-us.jpg"
