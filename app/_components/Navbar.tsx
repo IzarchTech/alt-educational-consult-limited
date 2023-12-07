@@ -16,8 +16,8 @@ const NAV_MENU: NavMenu[] = [
 
 function Navbar() {
   return (
-    <header className="w-full flex items-center border-[#FA824C] border-b-4 shadow-md fixed z-10 bg-background">
-      <nav className="container p-2 bg-background flex justify-between items-center">
+    <header className="w-full flex items-center border-[#FA824C] border-b-4 shadow-md bg-background">
+      <nav className="container flex items-center justify-between p-2 bg-background">
         <Link href="/" className="block">
           <img
             className="h-14"
@@ -26,7 +26,7 @@ function Navbar() {
           />
         </Link>
 
-        <div className="hidden lg:flex gap-4">
+        <div className="hidden gap-4 lg:flex">
           {NAV_MENU.map((menu) => (
             <Link
               key={menu.title}

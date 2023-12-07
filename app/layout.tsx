@@ -40,10 +40,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${font.className} h-screen w-screen antialiased flex flex-col items-center`}
+        className={`${font.className} h-screen w-screen antialiased grid grid-rows-[min-content repeat(1fr, 5)]`}
       >
-        <Navbar />
-        <main className="w-full pt-[76px]">{children}</main>
+        <div>
+          <Navbar />
+        </div>
+        <main className="w-full row-span-5 overflow-auto">{children}</main>
       </body>
     </html>
   );
