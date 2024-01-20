@@ -40,7 +40,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${font.className} h-screen w-screen antialiased grid grid-rows-[min-content repeat(1fr, 5)] scroll-smooth`}
+        className={`${font.className} h-screen w-screen antialiased grid grid-rows-[min-content repeat(1fr, 5)] scroll-smooth relative`}
       >
         <div>
           <Navbar />
