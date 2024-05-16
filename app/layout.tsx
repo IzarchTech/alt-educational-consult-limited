@@ -1,7 +1,13 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
-import "./globals.css";
-import Navbar from "./_components/Navbar";
+
+import "@/app/globals.css";
+
+import { ThemeProvider } from "@/components/theme-provider";
+import { cn } from "@/lib/utils";
+import Navbar from "@/components/ui/navbar";
+import Spacer from "@/components/ui/spacer";
+import Footer from "@/components/ui/footer";
 
 const font = Poppins({ subsets: ["latin"], weight: ["400", "600", "800"] });
 
@@ -34,18 +40,30 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: {
+}: Readonly<{
   children: React.ReactNode;
-}) {
+}>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
-        className={`${font.className} h-screen w-screen antialiased grid grid-rows-[min-content repeat(1fr, 5)] scroll-smooth relative`}
+        className={cn(
+          "min-h-screen antialiased grid grid-rows-[auto_1fr] bg-background text-foreground",
+          font.className
+        )}
       >
-        <div>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
           <Navbar />
-        </div>
-        <main className="w-full row-span-5 overflow-auto">{children}</main>
+          <main className="w-full overflow-y-auto flex flex-col scroll-smooth">
+            {children}
+            <Spacer />
+            <Footer />
+          </main>
+        </ThemeProvider>
       </body>
     </html>
   );
