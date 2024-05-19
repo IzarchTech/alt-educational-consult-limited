@@ -8,6 +8,24 @@ import proofOfFundsImg from "@/assets/proof_of_funds.jpg";
 import foreignCurrencyImg from "@/assets/foreign currency.jpg";
 import visaApplicationImg from "@/assets/visa_application.jpg";
 import accommodationImg from "@/assets/accommodation.jpg";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Our Services - Alt Educational Consult Limited",
+  description:
+    "Choosing A Suitable School & Program: Navigate Your Educational Joourney With Us",
+  openGraph: {
+    type: "website",
+    title: "Our Services - Alt Educational Consult Limited",
+    description:
+      "Choosing A Suitable School & Program: Navigate Your Educational Joourney With Us",
+  },
+  twitter: {
+    title: "Our Services - Alt Educational Consult Limited",
+    description:
+      "Choosing A Suitable School & Program: Navigate Your Educational Joourney With Us",
+  },
+};
 
 function OurServicesPage() {
   return (
