@@ -47,7 +47,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body
         className={cn(
-          "min-h-screen antialiased grid grid-rows-[auto_1fr] bg-background text-foreground",
+          "h-screen w-screen antialiased grid grid-rows-[auto_1fr] bg-background text-foreground",
           font.className
         )}
       >
@@ -58,7 +58,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Navbar />
-          <main className="w-full overflow-y-auto flex flex-col scroll-smooth">
+          <main className="w-full overflow-y-auto flex flex-col">
             {children}
             <Spacer />
             <Footer />

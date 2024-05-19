@@ -20,9 +20,9 @@ function Footer() {
         </p>
 
         <Stack variant="vertical" className="gap-2 w-full">
-          <h4 className="text-right">Quick Links</h4>
+          <h4 className="text-left md:text-right">Quick Links</h4>
 
-          <Stack variant="vertical" className="gap-1 text-right">
+          <Stack variant="vertical" className="gap-1 text-left md:text-right">
             {links.map((link) => (
               <Link
                 key={`footer_link-${link.title}`}

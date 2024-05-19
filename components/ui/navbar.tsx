@@ -32,7 +32,7 @@ export const links = [
 
 function Navbar() {
   return (
-    <div className="w-full p-4 lg:p-6 flex justify-between items-center shadow-md border-b dark:border-b-primary">
+    <nav className="w-full p-4 lg:p-6 flex justify-between items-center shadow-md border-b dark:border-b-primary">
       <Link href="/" className="h-14 relative object-center md:w-56 w-36">
         <Image
           src={logo}
@@ -65,7 +65,7 @@ function Navbar() {
           </Link>
         ))}
       </Stack>
-    </div>
+    </nav>
   );
 }
 
