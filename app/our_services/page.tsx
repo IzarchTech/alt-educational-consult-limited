@@ -330,8 +330,8 @@ function OurServicesPage() {
           >
             <div className="inset-0 absolute z-10 bg-black/40 flex flex-col items-center justify-center text-center">
               <h3 className="text-slate-50">
-                Proof of Funds Support: Secure Your Educational Journey With Our
-                Help
+                Seamlessly Navigate Visa Applications with ALT Educational
+                Consult
               </h3>
             </div>
           </div>
