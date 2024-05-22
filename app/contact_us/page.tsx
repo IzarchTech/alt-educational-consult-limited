@@ -36,7 +36,7 @@ function ContactUsPage() {
         imageUrl={contactUsImg.src}
       />
 
-      <div className="container grid grid-cols-[1fr_2fr] gap-6">
+      <div className="container grid md:grid-cols-[1fr_2fr] gap-6">
         <Stack variant="vertical" className="gap-2">
           <div className="hover:shadow-md min-w-[20%] p-2 border-b">
             <Stack className="items-center gap-8">
