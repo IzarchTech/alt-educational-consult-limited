@@ -11,6 +11,21 @@ import {
 } from "@/components/ui/card";
 import { MessageSquare, Phone } from "lucide-react";
 import ContactUsForm from "./_components/contact-us-form";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contact Us - Alt Educational Consult Limited",
+  description: "Send us a Message. We would love to hear from you!",
+  openGraph: {
+    type: "website",
+    title: "Contact Us - Alt Educational Consult Limited",
+    description: "Send us a Message. We would love to hear from you!",
+  },
+  twitter: {
+    title: "Contact Us - Alt Educational Consult Limited",
+    description: "Send us a Message. We would love to hear from you!",
+  },
+};
 
 function ContactUsPage() {
   return (
