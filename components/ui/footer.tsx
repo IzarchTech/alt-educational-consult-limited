@@ -13,10 +13,7 @@ function Footer() {
           At ALT Educational Consult, we specialize in helping students like you
           realize their dreams of studying abroad. With our years of experience
           and a team of dedicated experts, we have successfully assisted
-          numerous students in gaining admission into A-Level, Foundation,
-          Undergraduate, Postgraduate and PHD degree Programs at top and
-          world-ranked institutions around the world including United Kingdom,
-          United States of America, Canada, and Ireland.
+          numerous students in gaining admission into...<Link href="/about_us">Read More</Link>
         </p>
 
         <Stack variant="vertical" className="gap-2 w-full">

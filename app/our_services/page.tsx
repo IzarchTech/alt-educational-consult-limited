@@ -34,7 +34,7 @@ function OurServicesPage() {
         className="w-full relative h-80 lg:h-[600px] -mt-2 pt-2 bg-no-repeat bg-cover bg-bottom"
         style={{ backgroundImage: `url(${ourServicesImg.src})` }}
       >
-        <div className="inset-0 absolute z-10 bg-black/40 flex flex-col items-center justify-center text-center">
+        <div className="p-4 inset-0 absolute z-10 bg-black/40 flex flex-col items-center justify-center text-center">
           <h1 className="text-slate-50">Our Services</h1>
           <p className="italic text-slate-50">
             Choosing A Suitable School & Program: Navigate Your Educational
