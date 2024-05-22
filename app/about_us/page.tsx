@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 
 import aboutUsImg from "@/assets/about-us2.jpg";
+import Jumbotron from "@/components/ui/jumbotron";
 
 export const metadata: Metadata = {
   title: "About Us - Alt Educational Consult Limited",
@@ -22,14 +23,7 @@ export const metadata: Metadata = {
 function AboutUsPage() {
   return (
     <div className="w-full flex flex-col gap-6 justify-center pb-6">
-      <div
-        className="w-full relative h-80 lg:h-[600px] -mt-2 pt-2 bg-no-repeat bg-cover bg-bottom"
-        style={{ backgroundImage: `url(${aboutUsImg.src})` }}
-      >
-        <div className="p-4 inset-0 absolute z-10 bg-black/40 flex flex-col items-center justify-center text-center">
-          <h1 className="text-slate-50">About Us</h1>
-        </div>
-      </div>
+      <Jumbotron title="About Us" imageUrl={aboutUsImg.src} />
 
       <div className="container px-4 flex flex-col gap-14">
         <div className="space-y-4">

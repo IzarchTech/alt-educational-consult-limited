@@ -9,6 +9,7 @@ import foreignCurrencyImg from "@/assets/foreign currency.jpg";
 import visaApplicationImg from "@/assets/visa_application.jpg";
 import accommodationImg from "@/assets/accommodation.jpg";
 import { Metadata } from "next";
+import Jumbotron from "@/components/ui/jumbotron";
 
 export const metadata: Metadata = {
   title: "Our Services - Alt Educational Consult Limited",
@@ -30,18 +31,12 @@ export const metadata: Metadata = {
 function OurServicesPage() {
   return (
     <div className="w-full flex flex-col gap-6 justify-center pb-6">
-      <div
-        className="w-full relative h-80 lg:h-[600px] -mt-2 pt-2 bg-no-repeat bg-cover bg-bottom"
-        style={{ backgroundImage: `url(${ourServicesImg.src})` }}
-      >
-        <div className="p-4 inset-0 absolute z-10 bg-black/40 flex flex-col items-center justify-center text-center">
-          <h1 className="text-slate-50">Our Services</h1>
-          <p className="italic text-slate-50">
-            Choosing A Suitable School & Program: Navigate Your Educational
-            Journey With Us
-          </p>
-        </div>
-      </div>
+      <Jumbotron
+        title="Our Services"
+        imageUrl={ourServicesImg.src}
+        subTitle="Choosing A Suitable School & Program: Navigate Your Educational
+            Journey With Us"
+      />
 
       <div className="container px-4 flex flex-col gap-14">
         <div className="space-y-4">
