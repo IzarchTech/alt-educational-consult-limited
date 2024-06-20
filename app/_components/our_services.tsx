@@ -3,7 +3,6 @@
 import meetingImg from "@/assets/meeting.jpg";
 import resumeImg from "@/assets/resume.jpg";
 import reviewImg from "@/assets/review.jpg";
-import proofOfFundsImg from "@/assets/proof_of_funds.jpg";
 import foreignCurrencyImg from "@/assets/foreign currency.jpg";
 import visaApplicationImg from "@/assets/visa_application.jpg";
 import accommodationImg from "@/assets/accommodation.jpg";
@@ -23,11 +22,6 @@ const services: ServiceCardsProps[] = [
   {
     image: reviewImg,
     title: "Personal Statement Review: Craft Your Path to Success",
-  },
-  {
-    image: proofOfFundsImg,
-    title:
-      "Proof of Funds Support: Secure Your Educational Journey With Our Help",
   },
   {
     image: foreignCurrencyImg,

@@ -93,7 +93,7 @@ function ContactUsForm() {
               </FormItem>
             )}
           />
-          <Button type="submit" className="text-foreground">
+          <Button type="submit" className="text-primary-foreground">
             Submit
           </Button>
         </Stack>

@@ -47,11 +47,16 @@ function ContactUsPage() {
             </Stack>
           </div>
           <div className="hover:shadow-md min-w-[20%] p-2 border-b">
-            <Stack className="items-center gap-8">
+            <Stack className="items-center gap-8 relative">
               <div className="rounded-full flex items-center justify-center size-11 bg-secondary p-2">
                 <MessageSquare className="size-10" />
               </div>
-              <p>alted@gmail.com</p>
+              <p>info@alteducational.com</p>
+              <a
+                href="mailto:info@alteducational.com"
+                className="absolute inset-0 cursor-pointer"
+                aria-label="info@alteducational.com"
+              />
             </Stack>
           </div>
         </Stack>

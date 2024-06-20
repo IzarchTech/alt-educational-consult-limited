@@ -4,7 +4,6 @@ import ourServicesImg from "@/assets/our_services.jpg";
 import meetingImg from "@/assets/meeting.jpg";
 import resumeImg from "@/assets/resume.jpg";
 import reviewImg from "@/assets/review.jpg";
-import proofOfFundsImg from "@/assets/proof_of_funds.jpg";
 import foreignCurrencyImg from "@/assets/foreign currency.jpg";
 import visaApplicationImg from "@/assets/visa_application.jpg";
 import accommodationImg from "@/assets/accommodation.jpg";
@@ -230,54 +229,6 @@ function OurServicesPage() {
               <p>
                 Make an appointment with us today and let&apos;s transform your
                 aspirations into achievements.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div className="flex flex-col items-center justify-center gap-4 py-12">
-          <div
-            className="w-full relative h-80 lg:h-[600px] -mt-2 pt-2 bg-no-repeat bg-cover bg-center"
-            style={{ backgroundImage: `url(${proofOfFundsImg.src})` }}
-          >
-            <div className="inset-0 absolute z-10 bg-black/40 flex flex-col items-center justify-center text-center">
-              <h3 className="text-slate-50">
-                Proof of Funds Support: Secure Your Educational Journey With Our
-                Help
-              </h3>
-            </div>
-          </div>
-          <div className="grid md:grid-cols-2 gap-4 md:gap-10 w-full">
-            <div className="space-y-4">
-              <p>
-                Navigating the financial aspects of studying abroad can be
-                daunting, but with ALT Educational Consult&apos;s Proof of Funds
-                Support, you can embark on your educational journey with
-                confidence. Our dedicated team assists prospective students
-                planning to study in the UK or US in preparing and presenting
-                the required proof of funds documentation.
-              </p>
-              <p>
-                From deciphering complex financial requirements to compiling
-                necessary documents, ALT Educational Consult streamlines the
-                process, ensuring compliance with university and visa
-                regulations. Whether you&apos;re self-funding, relying on
-                scholarships, or seeking financial assistance from family
-                members, our expert guidance ensures your proof of funds meets
-                all necessary criteria.
-              </p>
-            </div>
-
-            <div className="flex flex-col gap-2 items-center">
-              <p>
-                Don&apos;t let financial hurdles hinder your dreams of studying
-                abroad. Trust ALT Educational Consult to provide the support and
-                expertise you need to demonstrate your financial readiness to
-                universities and visa authorities.
-              </p>
-              <p>
-                Book a call /contact us today and let us help you secure a spot
-                at the university of your dreams.
               </p>
             </div>
           </div>
