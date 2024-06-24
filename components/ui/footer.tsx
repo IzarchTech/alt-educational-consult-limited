@@ -46,7 +46,7 @@ function Footer() {
         </div>
       </div>
       <div className="w-full py-4 text-center bg-slate-900 text-slate-100 text-sm italic">
-        <p>ALT Educational Consult &copy; {new Date().getFullYear()}</p>
+        <p>ALT Educational Consult Limited &copy; {new Date().getFullYear()}</p>
       </div>
     </footer>
   );
