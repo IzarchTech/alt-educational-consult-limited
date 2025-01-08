@@ -1,7 +1,6 @@
 "use client";
 
 import meetingImg from "@/assets/meeting.jpg";
-import resumeImg from "@/assets/resume.jpg";
 import reviewImg from "@/assets/review.jpg";
 import foreignCurrencyImg from "@/assets/foreign currency.jpg";
 import visaApplicationImg from "@/assets/visa_application.jpg";
@@ -13,11 +12,6 @@ const services: ServiceCardsProps[] = [
   {
     image: meetingImg,
     title: "Elevate Your Application Success with ALT Educational Consult",
-  },
-  {
-    image: resumeImg,
-    title:
-      "Stand Out with a Polished Resume/CV: ALT Educational Consult Can Help",
   },
   {
     image: reviewImg,

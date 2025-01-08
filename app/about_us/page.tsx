@@ -50,10 +50,31 @@ function AboutUsPage() {
         <div className="space-y-2 py-10">
           <h2>Our Vision</h2>
           <p>
-            Named after Alexander Lucius Twilight who was recognized as the
-            first African American to have earned a bachelor&apos;s degree from
-            an American college or university, ALT Educational Consult Limited
-            desires to see the African child rise to the top through education.
+            Named after Alexander Lucius Twilight, who was recognized as the
+            first African American to graduate from an American college or
+            university with a degree, ALT Educational Consult Limited desires to
+            see the African child rise to the top through education.
+          </p>
+          <p>
+            We are a leading consulting firm based in Nigeria, dedicated to
+            guiding students through the complexities of studying abroad. At ALT
+            Educational Consult, we believe that international education is the
+            key to unlocking new opportunities and broadening horizons. Our team
+            of experienced consultants is committed to helping students navigate
+            the entire study abroad process—from selecting the right institution
+            and course to securing scholarships, visas, and accommodation.
+          </p>
+          <p>
+            Our goal is to empower Nigerian students to elevate their lives and
+            achieve their dreams by providing personalized guidance and support.
+            Through our services, we aim to inspire and facilitate academic
+            excellence and personal growth, ensuring that the African child has
+            access to the global education they deserve.
+          </p>
+          <p>
+            Let us help you embark on your journey towards academic and
+            professional success. Together, we can make your international
+            education dreams a reality.
           </p>
         </div>
         <div className="space-y-2 py-10">

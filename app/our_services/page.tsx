@@ -2,7 +2,6 @@ import Image from "next/image";
 
 import ourServicesImg from "@/assets/our_services.jpg";
 import meetingImg from "@/assets/meeting.jpg";
-import resumeImg from "@/assets/resume.jpg";
 import reviewImg from "@/assets/review.jpg";
 import foreignCurrencyImg from "@/assets/foreign currency.jpg";
 import visaApplicationImg from "@/assets/visa_application.jpg";
@@ -129,56 +128,6 @@ function OurServicesPage() {
               <p>
                 Don&apos;t leave your future to chance. Trust us to fine-tune
                 your application and showcase your strengths with confidence.
-              </p>
-              <p>
-                Book a call /contact us today and let us help you secure a spot
-                at the university of your dreams.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div className="flex flex-col items-center justify-center gap-4 py-12">
-          <div
-            className="w-full relative h-80 lg:h-[600px] -mt-2 pt-2 bg-no-repeat bg-cover bg-center"
-            style={{ backgroundImage: `url(${resumeImg.src})` }}
-          >
-            <div className="inset-0 absolute z-10 bg-black/40 flex flex-col items-center justify-center text-center">
-              <h3 className="text-slate-50">
-                Stand Out with a Polished Resume/CV: ALT Educational Consult Can
-                Help
-              </h3>
-            </div>
-          </div>
-          <div className="grid md:grid-cols-2 gap-4 md:gap-10 w-full">
-            <div className="space-y-4">
-              <p>
-                Your resume/CV is your first impression on admissions officers.
-                Ensure it shines with our expert Resume/CV Review service...
-              </p>
-              <p>
-                Tailored for prospective students eyeing the UK or US, our
-                seasoned advisors meticulously refine your document to highlight
-                your strengths and achievements.
-              </p>
-
-              <p>
-                We know what universities look out for. We fine-tune your
-                resume/CV, emphasizing academic prowess, extracurricular
-                activities, and relevant experiences to captivate admissions
-                committees.
-              </p>
-              <p>
-                Whether you&apos;re a seasoned scholar or a budding talent, our
-                personalized approach ensures your application stands out.
-              </p>
-            </div>
-
-            <div className="flex flex-col gap-2 items-center">
-              <p>
-                Don&apos;t let a mediocre resume/CV hinder your dreams. Trust us
-                to elevate your application with a polished document that speaks
-                volumes about your potential.
               </p>
               <p>
                 Book a call /contact us today and let us help you secure a spot
