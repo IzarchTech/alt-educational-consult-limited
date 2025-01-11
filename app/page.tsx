@@ -2,6 +2,7 @@ import Link from "next/link";
 import OurServices from "./_components/our_services";
 import Stats from "./_components/stats";
 import LandingCarousel from "./_components/landing-carousel";
+import Testimonials from "./_components/testimonials";
 
 export default function Home() {
   return (
@@ -36,6 +37,7 @@ export default function Home() {
       </div>
       <Stats />
       <OurServices />
+      <Testimonials />
     </div>
   );
 }
