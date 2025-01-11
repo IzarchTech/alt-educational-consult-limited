@@ -34,6 +34,9 @@ const services: ServiceCardsProps[] = [
 function OurServices() {
   return (
     <div className="container grid md:grid-cols-3 lg:grid-cols-4 gap-4 py-6">
+      <div className="md:col-span-3 lg:col-span-4">
+        <h2 className="text-center">Our Services</h2>
+      </div>
       {services.map((service) => (
         <ServiceCard
           key={service.title.replaceAll(" ", "_")}

@@ -6,7 +6,7 @@ import CountUp from "react-countup";
 
 function Stats() {
   return (
-    <Stack className="w-full py-12 bg-secondary min-h-14 justify-center">
+    <Stack className="w-full py-12 lg:py-32 bg-secondary min-h-14 justify-center">
       <div className="max-w-sm grid grid-cols-2 gap-4">
         <Stack
           variant="vertical"
