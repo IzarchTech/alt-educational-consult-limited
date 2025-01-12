@@ -96,16 +96,10 @@ function OurServicesPage() {
             academic excellence.
           </p>
 
-          <Link
-            href="/contact_us"
-            className={cn(
-              buttonVariants({ variant: "link", size: "lg" }),
-              "px-0 hover:border hover:px-8 transition-all ease-linear duration-300 border-primary delay-200"
-            )}
-          >
+          <p>
             Contact us today and take the first step towards a brighter
             tomorrow.
-          </Link>
+          </p>
         </div>
 
         <div className="flex flex-col items-center justify-center gap-4 pb-12 leading-6">
@@ -138,16 +132,10 @@ function OurServicesPage() {
               Don&apos;t leave your future to chance. Trust us to fine-tune your
               application and showcase your strengths with confidence.
             </p>
-            <Link
-              href="/contact_us"
-              className={cn(
-                buttonVariants({ variant: "link", size: "lg" }),
-                "px-0 hover:border hover:px-8 transition-all ease-linear duration-300 border-primary delay-200"
-              )}
-            >
+            <p>
               Book a call /contact us today and let us help you secure a spot at
               the university of your dreams.
-            </Link>
+            </p>
           </div>
         </div>
 
@@ -157,7 +145,7 @@ function OurServicesPage() {
               Personal Statement Review: Craft Your Path to Success
             </h3>
 
-            <div className="grid md:grid-cols-2 gap-4 lg:gap-10 w-full">
+            <div className="grid lg:grid-cols-2 gap-4 lg:gap-10 w-full">
               <Stack variant="vertical" className="gap-2 space-y-4 leading-6">
                 <div className="relative h-80 md:shadow bg-slate-50">
                   <Image
@@ -199,16 +187,10 @@ function OurServicesPage() {
                   statement. Trust us to elevate your application and set you on
                   the path to academic success.
                 </p>
-                <Link
-                  href="/contact_us"
-                  className={cn(
-                    buttonVariants({ variant: "link", size: "lg" }),
-                    "px-0 hover:border hover:px-8 transition-all ease-linear duration-300 border-primary delay-200"
-                  )}
-                >
+                <p>
                   Make an appointment with us today and let&apos;s transform
                   your aspirations into achievements.
-                </Link>
+                </p>
               </div>
             </div>
           </div>
@@ -248,16 +230,10 @@ function OurServicesPage() {
               plans. Trust us to streamline fee payments, allowing you to focus
               on what truly matters—achieving your academic goals.
             </p>
-            <Link
-              href="/contact_us"
-              className={cn(
-                buttonVariants({ variant: "link", size: "lg" }),
-                "px-0 hover:border hover:px-8 transition-all ease-linear duration-300 border-primary delay-200"
-              )}
-            >
+            <p>
               Make an appointment with us today and let&apos;s transform your
               aspirations into achievements.
-            </Link>
+            </p>
           </div>
         </div>
 
@@ -267,7 +243,7 @@ function OurServicesPage() {
               Seamlessly Navigate Visa Applications with ALT Educational Consult
             </h3>
 
-            <div className="grid md:grid-cols-2 gap-4 lg:gap-10 w-full">
+            <div className="grid lg:grid-cols-2 gap-4 lg:gap-10 w-full">
               <Stack variant="vertical" className="gap-2 space-y-4 leading-6">
                 <div className="relative h-80 md:shadow bg-slate-50">
                   <Image
@@ -301,16 +277,10 @@ function OurServicesPage() {
                   allowing you to focus on preparing for your exciting academic
                   adventure.
                 </p>
-                <Link
-                  href="/contact_us"
-                  className={cn(
-                    buttonVariants({ variant: "link", size: "lg" }),
-                    "px-0 hover:border hover:px-8 transition-all ease-linear duration-300 border-primary delay-200"
-                  )}
-                >
+                <p>
                   Book a call /contact us today and let us help you secure a
                   spot at the university of your dreams.
-                </Link>
+                </p>
               </div>
             </div>
           </div>
@@ -322,8 +292,8 @@ function OurServicesPage() {
               Settle in Comfortably: Student Accommodation Support
             </h3>
 
-            <div className="grid md:grid-cols-2 gap-4 lg:gap-10 w-full">
-              <Stack variant="vertical" className="gap-2 space-y-4 leading-6">
+            <div className="grid lg:grid-cols-2 gap-4 lg:gap-10 w-full">
+              <Stack variant="vertical" className="gap-2 space-y-4 leading-6 lg:order-2">
                 <div className="relative h-80 lg:h-96 md:shadow bg-slate-50">
                   <Image
                     src={accommodationImg}
@@ -355,16 +325,10 @@ function OurServicesPage() {
                   to help you find a comfortable and convenient place to call
                   home.
                 </p>
-                <Link
-                  href="/contact_us"
-                  className={cn(
-                    buttonVariants({ variant: "link", size: "lg" }),
-                    "px-0 hover:border hover:px-8 transition-all ease-linear duration-300 border-primary delay-200"
-                  )}
-                >
+                <p>
                   Make an appointment with us today and let&apos;s transform
                   your aspirations into achievements.
-                </Link>
+                </p>
               </div>
             </div>
           </div>

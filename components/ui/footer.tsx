@@ -9,6 +9,17 @@ import Image from "next/image";
 import { Input } from "./input";
 import { Button } from "./button";
 
+const OUR_SERVICES = [
+  "Graduate & Undergraduate Admissions",
+  "Funding & Scholarships Advice",
+  "Personal Statement Review",
+  "Visa Application & Support",
+  "Accommodation Support",
+  "Foreign Currency Payment Support",
+  "Post Arrival Support",
+  "General Consultancy",
+];
+
 function Footer() {
   return (
     <footer className="w-full border-t flex flex-col">
@@ -49,16 +60,18 @@ function Footer() {
             <h4 className="text-left">Our Services</h4>
 
             <Stack className="gap-1 text-left text-xs flex-col">
-              <Link href="/our_services">
-                Graduate & Undergraduate Admissions
-              </Link>
-              <Link href="/our_services">Funding & Scholarships Advice</Link>
-              <Link href="/our_services">Personal Statement Review</Link>
-              <Link href="/our_services">Visa Application & Support</Link>{" "}
-              <p>Accommodation Support</p>
-              <Link href="/our_services">Foreign Currency Payment Support</Link>
-              <Link href="/our_services">Post Arrival Support</Link>
-              <Link href="/our_services">General Consultancy</Link>
+              {OUR_SERVICES.map((service, idx) => (
+                <Stack
+                  key={`footer_our-service_link_${service}`}
+                  className={cn(
+                    "items-center gap-2",
+                    idx !== links.length - 1 && "pr-2"
+                  )}
+                >
+                  <div className="size-1 rounded-full bg-slate-100" />
+                  <Link href="/our_services">{service}</Link>
+                </Stack>
+              ))}
             </Stack>
           </Stack>
           <Stack variant="vertical">
