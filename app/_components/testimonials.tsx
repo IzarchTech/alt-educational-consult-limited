@@ -132,7 +132,6 @@ export default function Testimonials() {
         <source src="/assets/testimony.webm" />
       </video>
       <div
-        id="testimonials_container"
         className="absolute bg-black/50 min-h-[50%] w-full md:max-w-md lg:max-w-[75%] z-30 text-white p-4 gap-6 flex flex-col items-center justify-around"
       >
         <h1 className="text-center">Candidate Testimonials</h1>
