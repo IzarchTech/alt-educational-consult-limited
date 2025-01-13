@@ -1,30 +1,20 @@
 "use client";
 
-import React from "react";
+import { FaInstagramSquare } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import Link from "next/link";
 import Stack from "./stack";
 import { links } from "./navbar";
-import Link from "next/link";
 import { cn } from "@/lib/utils";
-import Image from "next/image";
 import { Input } from "./input";
 import { Button } from "./button";
-
-const OUR_SERVICES = [
-  "Graduate & Undergraduate Admissions",
-  "Funding & Scholarships Advice",
-  "Personal Statement Review",
-  "Visa Application & Support",
-  "Accommodation Support",
-  "Foreign Currency Payment Support",
-  "Post Arrival Support",
-  "General Consultancy",
-];
+import { OUR_SERVICES } from "@/lib/constants";
 
 function Footer() {
   return (
     <footer className="w-full border-t flex flex-col">
       <div className="w-full items-center justify-center bg-slate-800 text-slate-100 px-4 py-12">
-        <div className="md:container grid md:grid-cols-[repeat(2,auto)] lg:grid-cols-[65ch_auto_auto_auto] gap-6">
+        <div className="grid md:grid-cols-[repeat(2,auto)] lg:grid-cols-[65ch_auto_auto_auto] gap-6">
           <p className="text-sm w-full">
             At ALT Educational Consult, we specialize in helping students like
             you realize their dreams of studying abroad. With our years of
@@ -81,25 +71,13 @@ function Footer() {
                 href="https://www.instagram.com/alt.educationalconsult/profilecard/?igsh=MXQzZjExZ2p3cjdtcA=="
                 target="_blank"
               >
-                <Image
-                  src="/assets/instagram.svg"
-                  alt="instagram logo"
-                  width={32}
-                  height={32}
-                  className="hover:scale-105 duration-500 ease-linear transition-all cursor-pointer"
-                />
+                <FaInstagramSquare className="size-8" />
               </Link>
               <Link
                 href="https://x.com/consultalt?s=21&t=2izlpzyqJ3lVrY118ViSNQ"
                 target="_blank"
               >
-                <Image
-                  src="/assets/x.svg"
-                  alt="x logo"
-                  width={32}
-                  height={32}
-                  className="hover:scale-105 duration-500 ease-linear transition-all cursor-pointer bg-slate-50"
-                />
+                <FaXTwitter className="size-8" />
               </Link>
             </Stack>
 

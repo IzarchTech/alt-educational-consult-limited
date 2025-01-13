@@ -12,6 +12,9 @@ import {
 import { MessageSquare, Phone } from "lucide-react";
 import ContactUsForm from "./_components/contact-us-form";
 import { Metadata } from "next";
+import Link from "next/link";
+import { FaInstagramSquare } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 export const metadata: Metadata = {
   title: "Contact Us - Alt Educational Consult Limited",
@@ -59,6 +62,20 @@ function ContactUsPage() {
               />
             </Stack>
           </div>
+          <Stack variant="horizontal" className="gap-2 pt-6 pl-4">
+            <Link
+              href="https://www.instagram.com/alt.educationalconsult/profilecard/?igsh=MXQzZjExZ2p3cjdtcA=="
+              target="_blank"
+            >
+              <FaInstagramSquare className="size-8" />
+            </Link>
+            <Link
+              href="https://x.com/consultalt?s=21&t=2izlpzyqJ3lVrY118ViSNQ"
+              target="_blank"
+            >
+              <FaXTwitter className="size-8" />
+            </Link>
+          </Stack>
         </Stack>
 
         <div className="flex justify-center">
