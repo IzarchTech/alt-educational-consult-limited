@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div className="w-full flex flex-col gap-6 justify-center pb-6">
       <LandingCarousel />
-      <div className="container py-12 space-y-32">
+      <div className="container py-12 space-y-12">
         <p>
           At ALT Educational Consult, we specialize in helping students like you
           realize their dreams of studying abroad. With our years of experience
@@ -25,7 +25,7 @@ export default function Home() {
           </Link>
         </p>
 
-        <div className="space-y-4">
+        <div className="space-y-4 pt-6 border-t">
           <h2 className="text-center">Our Vision</h2>
           <p>
             Named after Alexander Lucius Twilight who was recognized as the
