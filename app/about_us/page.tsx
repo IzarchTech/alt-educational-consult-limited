@@ -25,8 +25,8 @@ function AboutUsPage() {
     <div className="w-full flex flex-col gap-6 justify-center pb-6">
       <Jumbotron title="About Us" imageUrl={aboutUsImg.src} />
 
-      <div className="container px-4 flex flex-col gap-14">
-        <div className="space-y-4">
+      <div className="w-full flex flex-col">
+        <div className="space-y-6 container px-4 py-12">
           <p>
             At ALT Educational Consult, we specialize in helping students like
             you realize their dreams of studying abroad. With our years of
@@ -47,38 +47,42 @@ function AboutUsPage() {
             thereby giving you a seamless experience.
           </p>
         </div>
-        <div className="space-y-2 py-10">
-          <h2>Our Vision</h2>
-          <p>
-            Named after Alexander Lucius Twilight, who was recognized as the
-            first African American to graduate from an American college or
-            university with a degree, ALT Educational Consult Limited desires to
-            see the African child rise to the top through education.
-          </p>
-          <p>
-            We are a leading consulting firm based in Nigeria, dedicated to
-            guiding students through the complexities of studying abroad. At ALT
-            Educational Consult, we believe that international education is the
-            key to unlocking new opportunities and broadening horizons. Our team
-            of experienced consultants is committed to helping students navigate
-            the entire study abroad process—from selecting the right institution
-            and course to securing scholarships, visas, and accommodation.
-          </p>
-          <p>
-            Our goal is to empower Nigerian students to elevate their lives and
-            achieve their dreams by providing personalized guidance and support.
-            Through our services, we aim to inspire and facilitate academic
-            excellence and personal growth, ensuring that the African child has
-            access to the global education they deserve.
-          </p>
-          <p>
-            Let us help you embark on your journey towards academic and
-            professional success. Together, we can make your international
-            education dreams a reality.
-          </p>
+        <div className="space-y-2 py-12 bg-secondary">
+          <div className="container px-4 space-y-6">
+            <h2>Our Vision</h2>
+            <p>
+              Named after Alexander Lucius Twilight, who was recognized as the
+              first African American to graduate from an American college or
+              university with a degree, ALT Educational Consult Limited desires
+              to see the African child rise to the top through education.
+            </p>
+            <p>
+              We are a leading consulting firm based in Nigeria, dedicated to
+              guiding students through the complexities of studying abroad. At
+              ALT Educational Consult, we believe that international education
+              is the key to unlocking new opportunities and broadening horizons.
+              Our team of experienced consultants is committed to helping
+              students navigate the entire study abroad process—from selecting
+              the right institution and course to securing scholarships, visas,
+              and accommodation.
+            </p>
+            <p>
+              Our goal is to empower Nigerian students to elevate their lives
+              and achieve their dreams by providing personalized guidance and
+              support. Through our services, we aim to inspire and facilitate
+              academic excellence and personal growth, ensuring that the African
+              child has access to the global education they deserve.
+            </p>
+            <p>
+              Let us help you embark on your journey towards academic and
+              professional success. Together, we can make your international
+              education dreams a reality.
+            </p>
+          </div>
         </div>
-        <div className="space-y-2 py-10">
-          <h2>Why Choose Us</h2>
+
+        <div className="space-y-6 py-12 container">
+          <h2 className="text-center">Why Choose Us</h2>
 
           <p>
             We understand that the process from searching for a suitable course
