@@ -52,14 +52,16 @@ function Footer() {
             <Stack className="gap-1 text-left text-xs flex-col">
               {OUR_SERVICES.map((service, idx) => (
                 <Stack
-                  key={`footer_our-service_link_${service}`}
+                  key={`footer_our-service_link_${service.path}`}
                   className={cn(
                     "items-center gap-2",
                     idx !== links.length - 1 && "pr-2"
                   )}
                 >
                   <div className="size-1 rounded-full bg-slate-100" />
-                  <Link href="/our_services">{service}</Link>
+                  <Link href={`/our_services#${service.path}`}>
+                    {service.title}
+                  </Link>
                 </Stack>
               ))}
             </Stack>

@@ -8,9 +8,10 @@ import React from "react";
 export interface ServiceCardsProps {
   image: StaticImageData;
   title: string;
+  path: string;
 }
 
-function ServiceCard({ image, title }: Readonly<ServiceCardsProps>) {
+function ServiceCard({ image, path, title }: Readonly<ServiceCardsProps>) {
   return (
     <Stack variant="vertical" className="shadow-md bg-card border rounded-lg">
       <div className="w-full relative h-40 rounded-t-lg object-center">
@@ -25,10 +26,11 @@ function ServiceCard({ image, title }: Readonly<ServiceCardsProps>) {
       </div>
       <div className="py-6 px-4 flex items-center justify-center">
         <Link
-          href={`/our_services#${title
-            .replaceAll(" ", "_")
-            .replaceAll("&", "and")}`}
-          className={cn(buttonVariants({ variant: "default", size: "sm" }))}
+          href={`/our_services#${path}`}
+          className={cn(
+            buttonVariants({ variant: "outline", size: "sm" }),
+            "hover:bg-primary hover:text-primary-foreground transition-all duration-300 ease-in-out"
+          )}
         >
           {title}
         </Link>
