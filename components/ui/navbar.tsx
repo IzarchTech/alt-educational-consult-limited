@@ -1,11 +1,14 @@
 "use client";
 
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import logo from "@/assets/logo.png";
 import logoDark from "@/assets/logo-dark.png";
 import Link from "next/link";
 import Stack from "./stack";
+import { Sheet, SheetContent, SheetTrigger } from "./sheet";
+import { Button } from "./button";
+import { AlignJustify } from "lucide-react";
 
 export const links = [
   {
@@ -29,6 +32,34 @@ export const links = [
     path: "/contact_us",
   },
 ];
+
+function MobileNavbar() {
+  const [isOpen, setIsOpen] = useState(false);
+  return (
+    <Sheet open={isOpen} onOpenChange={setIsOpen}>
+      <SheetTrigger asChild>
+        <Button className="md:hidden" variant="outline" size="icon">
+          <AlignJustify />
+        </Button>
+      </SheetTrigger>
+
+      <SheetContent>
+        <Stack variant="vertical" className="divide-y">
+          {links.map((link) => (
+            <Link
+              className="transition-all duration-300 hover:font-semibold hover:text-primary hover:scale-105 ease-in-out py-4"
+              key={link.title}
+              href={link.path}
+              onClick={() => setIsOpen(false)}
+            >
+              {link.title}
+            </Link>
+          ))}
+        </Stack>
+      </SheetContent>
+    </Sheet>
+  );
+}
 
 function Navbar() {
   return (
@@ -65,6 +96,7 @@ function Navbar() {
           </Link>
         ))}
       </Stack>
+      <MobileNavbar />
     </nav>
   );
 }
