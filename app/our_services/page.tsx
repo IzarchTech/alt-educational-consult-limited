@@ -1,16 +1,14 @@
 import { Metadata } from "next";
+import Image from "next/image";
+import Stack from "@/components/ui/stack";
 import Jumbotron from "@/components/ui/jumbotron";
+
 import ourServicesImg from "@/assets/our_services.jpg";
 import meetingImg from "@/assets/meeting.jpg";
 import reviewImg from "@/assets/review.jpg";
 import foreignCurrencyImg from "@/assets/foreign currency.jpg";
 import visaApplicationImg from "@/assets/visa_application.jpg";
 import accommodationImg from "@/assets/accommodation.jpg";
-import Image from "next/image";
-import Stack from "@/components/ui/stack";
-import { Button, buttonVariants } from "@/components/ui/button";
-import Link from "next/link";
-import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
   title: "Our Services - Alt Educational Consult Limited",
