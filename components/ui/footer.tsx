@@ -9,6 +9,42 @@ import { cn } from "@/lib/utils";
 import { Input } from "./input";
 import { Button } from "./button";
 import { OUR_SERVICES } from "@/lib/constants";
+import { useActionState, useRef } from "react";
+import { subscribeToNewsletter } from "@/actions/newsletter.action";
+
+function EmailSubscriptionForm() {
+  const [state, dispatch, isPending] = useActionState(
+    subscribeToNewsletter,
+    null
+  );
+  const emailRef = useRef<HTMLInputElement>(null);
+
+  const handleSubmit = () => {
+    if (emailRef.current) {
+      const formData = new FormData();
+      formData.set("email", emailRef.current.value);
+      dispatch(formData);
+    }
+  };
+
+  return (
+    <Stack>
+      <Input
+        type="email"
+        className="flex-1 rounded-none rounded-l-lg"
+        placeholder="Email address"
+        ref={emailRef}
+      />
+      <Button
+        className="rounded-none rounded-r-lg"
+        onClick={handleSubmit}
+        disabled={isPending}
+      >
+        Subscribe
+      </Button>
+    </Stack>
+  );
+}
 
 function Footer() {
   return (
@@ -89,16 +125,7 @@ function Footer() {
                 <p className="md:text-xs">
                   Subscribe to get our updates &amp; deals delivered to you
                 </p>
-                <Stack>
-                  <Input
-                    type="email"
-                    className="flex-1 rounded-none rounded-l-lg"
-                    placeholder="Email address"
-                  />
-                  <Button className="rounded-none rounded-r-lg">
-                    Subscribe
-                  </Button>
-                </Stack>
+                <EmailSubscriptionForm />
               </Stack>
             </Stack>
           </Stack>
