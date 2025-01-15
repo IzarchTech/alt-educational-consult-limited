@@ -1,37 +1,37 @@
 "use server";
 
-import { z } from "zod";
+import { z, ZodError } from "zod";
 import { db } from "@/db";
 import { revalidatePath } from "next/cache";
 import { newsletterSubscriptions } from "@/db/schema";
+import { PostgresError } from "postgres";
 
 const formSchema = z.object({
   email: z.string().email(),
 });
 
-export async function subscribeToNewsletter(prevState: unknown, formData: FormData) {
+export async function subscribeToNewsletter(
+  prevState: unknown,
+  formData: FormData
+) {
   try {
     const { email } = formSchema.parse({
       email: formData.get("email"),
     });
     await db.insert(newsletterSubscriptions).values({ email });
     revalidatePath("/");
+    return { message: "You have sucessfully subscribed", status: true };
   } catch (error) {
-    throw new Error("Error subscribing to newsletter");
+    if (error instanceof ZodError) {
+      return { message: error.errors[0].message, status: false };
+    }
+
+    const postgresError = error as PostgresError;
+
+    if (postgresError.code === "23505") {
+      return { message: "Email already exists", status: false };
+    }
+
+    return { message: "Something went wrong", status: false };
   }
 }
-
-// 'use server'
-
-// import { redirect } from 'next/navigation'
-
-// export async function createUser(prevState: any, formData: FormData) {
-//   const res = await fetch('https://...')
-//   const json = await res.json()
-
-//   if (!res.ok) {
-//     return { message: 'Please enter a valid email' }
-//   }
-
-//   redirect('/dashboard')
-// }

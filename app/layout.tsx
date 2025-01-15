@@ -8,6 +8,7 @@ import { cn } from "@/lib/utils";
 import Navbar from "@/components/ui/navbar";
 import Spacer from "@/components/ui/spacer";
 import Footer from "@/components/ui/footer";
+import { Toaster } from "@/components/ui/sonner";
 
 const font = Poppins({ subsets: ["latin"], weight: ["400", "600", "800"] });
 
@@ -63,6 +64,8 @@ export default function RootLayout({
             <Spacer />
             <Footer />
           </main>
+
+          <Toaster />
         </ThemeProvider>
       </body>
     </html>

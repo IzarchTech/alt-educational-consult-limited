@@ -9,8 +9,9 @@ import { cn } from "@/lib/utils";
 import { Input } from "./input";
 import { Button } from "./button";
 import { OUR_SERVICES } from "@/lib/constants";
-import { useActionState, useRef } from "react";
+import { startTransition, useActionState, useEffect, useRef } from "react";
 import { subscribeToNewsletter } from "@/actions/newsletter.action";
+import { toast } from "sonner";
 
 function EmailSubscriptionForm() {
   const [state, dispatch, isPending] = useActionState(
@@ -20,18 +21,35 @@ function EmailSubscriptionForm() {
   const emailRef = useRef<HTMLInputElement>(null);
 
   const handleSubmit = () => {
-    if (emailRef.current) {
+    startTransition(() => {
+      if (!emailRef.current) return;
+
       const formData = new FormData();
       formData.set("email", emailRef.current.value);
       dispatch(formData);
-    }
+    });
   };
+
+  useEffect(() => {
+    if (!state) return;
+
+    if (state.status) {
+      toast.success(state.message, {
+        position: "top-right",
+      });
+      emailRef.current!.value = "";
+    } else {
+      toast.error(state.message, {
+        position: "top-right",
+      });
+    }
+  }, [state]);
 
   return (
     <Stack>
       <Input
         type="email"
-        className="flex-1 rounded-none rounded-l-lg"
+        className="flex-1 rounded-none rounded-l-lg text-slate-800"
         placeholder="Email address"
         ref={emailRef}
       />
